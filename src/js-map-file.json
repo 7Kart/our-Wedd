@@ -1,0 +1,6 @@
+{
+  "main.js": [
+    "./src/js/test1.js",
+    "./src/js/test2.js"
+  ]
+}
