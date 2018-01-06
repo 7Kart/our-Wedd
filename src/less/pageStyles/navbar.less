@@ -1,0 +1,81 @@
+nav{
+  height: 50px;
+  width: 100%;
+  background: white;
+  font-size: 11pt;
+  //font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+  z-index: 999 !important;
+}
+
+.desk-menu {
+  height: 50px;
+  margin:0 ;
+  //padding: 0;
+}
+
+.desk-menu > li{
+  display: inline;
+  float: left;
+}
+
+nav a {
+  //color: #fff;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  //text-shadow: 1px 1px 0px #283744;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "tiempos","Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  letter-spacing: 2px;
+  color: grey;
+}
+
+.mobile-menu a {
+  //color: #fff;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  //text-shadow: 1px 1px 0px #283744;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "tiempos","Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  letter-spacing: 2px;
+  color: grey;
+}
+
+
+
+#pull {
+  float: right;
+  padding-right: 25px;
+}
+
+.mobile-menu{
+  z-index: 990 !important;
+  text-align: center !important;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+
+}
+
+.phonemenubut-enter-active, .phonemenubut-leave-active {
+  transition: top .5s;
+}
+
+.phonemenubut-enter, .phonemenubut-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  top: -200px;
+}

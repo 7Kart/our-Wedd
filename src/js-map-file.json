@@ -1,6 +1,16 @@
 {
   "main.js": [
-    "./src/js/test1.js",
-    "./src/js/test2.js"
+    "./src/js/partials.js",
+    "./src/js/app.js",
+    "./src/js/components/landing.js",
+    "./src/js/components/firstSection.js",
+    "./src/js/components/secondSection.js",
+    "./src/js/components/navbar.js"
+
+  ],
+  "libs":[
+    "./src/js/libs/jquery.min.js",
+    "./src/js/libs/jquery.fullpage.min.js",
+    "./src/js/libs/vue.js"
   ]
 }

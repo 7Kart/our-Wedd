@@ -1,0 +1,15 @@
+<div>
+    <nav id="menu" class="clearfix">
+        <ul class="desk-menu hidden-xs hidden-sm" >
+            <li><a href="#firstPage">First section</a></li>
+            <li><a href="#secondPage">Second section</a></li>
+        </ul>
+        <a class="hidden-md hidden-lg" href="#" id="pull" v-on:click="showMenu">Menu</a>
+    </nav>
+    <transition name="phonemenubut">
+        <ul v-if="openMenu" class="mobile-menu hidden-lg hidden-md col-xs-12 col-sm-12" >
+            <li><a href="#firstPage" v-on:click="chooseItem">First section</a></li>
+            <li><a href="#secondPage" v-on:click="chooseItem">Second section</a></li>
+        </ul>
+    </transition>
+</div>

@@ -15,15 +15,27 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == "developm
 gulp.task('concatJs', () => {
     console.log("JS concat");
     var jsFiles = JSON.parse(fs.readFileSync("src/js-map-file.json"))["main.js"];
+    var jsLibs = JSON.parse(fs.readFileSync("src/js-map-file.json"))["libs"];
+
+    gulp.src(jsLibs)
+        .pipe(concat("libs.js"))
+        .pipe(gulp.dest('public/javascripts'));
     gulp.src(jsFiles)
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(concat("main.js"))
-        .pipe(gulp.dest('./src/js'))
+        .pipe(gulp.dest('public/javascripts'));
+
 });
 
-gulp.task('less', function(){
+//сборка less в css
+gulp.task('less', () =>{
     // return gulp.src(['assets/less/**/*.less', 'bower_components/fullpage.js/dist/jquery.fullpage.css'])
     return gulp.src([
         'src/less/*.less',
+        'src/less/pageStyles/*.css',
+        'src/less/pageStyles/*.less',
     ])
         .pipe(gulpIf(isDevelopment, sourceMaps.init()))
         .pipe(gLess({
@@ -34,18 +46,39 @@ gulp.task('less', function(){
         .pipe(gulp.dest('public/stylesheets'));
 });
 
-//транспиляция в бабле
-gulp.task('babel', () => {
-    console.log("run babel");
-    gulp.src('src/js/main.js')
-        .pipe(babel({
-            presets: ['env']
-        }))
-        .pipe(gulp.dest('public/javascripts'))
+//сборка шаблонов
+gulp.task('partials', function(){
+    console.log("read partials");
+    const dirPath = "./src/partials";
+    fs.readdir(dirPath, (err, dirFileList)=>{
+        if(!err)
+            if(dirFileList.length > 0){
+                var templateObject = {};
+                for(var i=0; i< dirFileList.length; i++){
+                    var fileName = dirFileList[i];
+                    var field = fileName.split('.')[0];
+                    var fileData = fs.readFileSync(dirPath+"/"+fileName);
+                    templateObject[field] = fileData.toString();
+                }
+                fs.writeFile('./src/js/partials.js', "window['template']="+JSON.stringify(templateObject), function(err){
+                    if(!err)
+                        console.log("file write");
+                });
+            }
+            else
+                console.log("folder is empty");
+        else
+            console.log("read dir error");
+    });
 });
 
-gulp.task('watch',  function(){
-    gulp.watch('src/js/*.js', gulpsync.sync(['concatJs', 'babel']));
+//изменение файлов
+gulp.task('watch', ()=>{
+    gulp.watch('src/js/**/*.js', gulpsync.sync(['partials','concatJs']));
+    gulp.watch('src/less/**/*.less', ['less']);
+    gulp.watch('src/partials/*.html', gulpsync.sync(['partials','concatJs']))
 });
 
-gulp.task('default', gulpsync.async([['concatJs', 'babel'], 'less', 'watch']));
+gulp.task('default', gulpsync.async([['partials', 'concatJs'], 'less', 'watch']));
+
+
