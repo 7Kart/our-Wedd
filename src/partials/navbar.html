@@ -4,7 +4,10 @@
             <li><a href="#firstPage">First section</a></li>
             <li><a href="#secondPage">Second section</a></li>
         </ul>
-        <a class="hidden-md hidden-lg" href="#" id="pull" v-on:click="showMenu">Menu</a>
+        <!--<a class="hidden-md hidden-lg" href="#" id="pull" v-on:click="showMenu">Menu</a>-->
+        <button class="hidden-md hidden-lg cmn-toggle-switch cmn-toggle-switch__rot" v-on:click="showMenu">
+            <span>toggle menu</span>
+        </button>
     </nav>
     <transition name="phonemenubut">
         <ul v-if="openMenu" class="mobile-menu hidden-lg hidden-md col-xs-12 col-sm-12" >
