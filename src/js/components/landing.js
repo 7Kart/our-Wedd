@@ -7,8 +7,11 @@ Vue.component('landing', {
     mounted: function () {
         $('#fullpage').fullpage({
             menu: '#menu',
-            anchors:['firstPage', 'secondPage'],
-            sectionsColor: ['#f2f2f2', '#4BBFC3']
+            anchors:['firstPage', 'secondPage','thirdSection', 'ourInstagram'],
+            sectionsColor: ['#fff', '#4BBFC3'],
+            offsetSections:true,
+            autoScrolling:false,
+            // verticalCentered: false
         });
     }
 });

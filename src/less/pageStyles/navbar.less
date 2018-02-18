@@ -1,24 +1,71 @@
+@block-background: rgb(121, 13, 10);
+
 nav{
-  height: 50px;
+  height: 115px;
   width: 100%;
-  background: white;
+  background: transparent;
   font-size: 11pt;
-  //font-family: 'PT Sans', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   position: relative;
   margin: 0;
   z-index: 999 !important;
 }
 
+.logo-container{
+  //margin: 0 auto;
+  //float: left;
+  left: 46%;
+  position: absolute;
+  width:8%;
+  //background-color: rgb(11, 13, 10);
+  height:100%;
+  border-radius: 0px 0px 200px 200px;
+  -moz-border-radius: 0px 0px 200px 200px;
+  -webkit-border-radius: 0px 0px 200px 200px;
+  border: 0px solid rgb(11, 13, 10);
+  background: url("../images/logo.png") no-repeat @block-background;
+  background-position: center;
+  background-size: 85px;
+}
+
+
+
 .desk-menu {
   height: 50px;
   margin:0 ;
-  //padding: 0;
+  //text-align: center;
+  width:46%;
+  padding: 0;
+  background-color: @block-background;
+
 }
+
+.desk-menu-left{
+  float: left;
+  padding-right: 3%;
+}
+
+.desk-menu-left > li{
+  float: right;
+}
+
+.desk-menu-right{
+  padding-left: 3%;
+  float: right;
+}
+
+.desk-menu-right > li{
+  float: left;
+}
+
 
 .desk-menu > li{
   display: inline;
-  float: left;
+  margin: 0 2% 0 2%;
+
+  //float: left
+
 }
 
 nav a {
@@ -34,7 +81,7 @@ nav a {
   font-family: "tiempos","Open Sans", Arial, Helvetica, sans-serif;
   font-size: 14pt;
   letter-spacing: 2px;
-  color: grey;
+  color: white;
 }
 
 .mobile-menu a {

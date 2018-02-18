@@ -16,7 +16,7 @@ gulp.task('concatJs', () => {
     console.log("JS concat");
     var jsFiles = JSON.parse(fs.readFileSync("src/js-map-file.json"))["main.js"];
     var jsLibs = JSON.parse(fs.readFileSync("src/js-map-file.json"))["libs"];
-
+    var jsAdmin = JSON.parse(fs.readFileSync("src/js-map-file.json"))["admin.js"];
     gulp.src(jsLibs)
         .pipe(concat("libs.js"))
         .pipe(gulp.dest('public/javascripts'));
@@ -26,12 +26,33 @@ gulp.task('concatJs', () => {
         }))
         .pipe(concat("main.js"))
         .pipe(gulp.dest('public/javascripts'));
-
+    gulp.src(jsAdmin)
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(concat("admin.js"))
+        .pipe(gulp.dest('public/javascripts'));
 });
 
 //сборка less в css
-gulp.task('less', () =>{
+gulp.task('adminLess', () =>{
     // return gulp.src(['assets/less/**/*.less', 'bower_components/fullpage.js/dist/jquery.fullpage.css'])
+    console.log("admin less");
+    return gulp.src([
+        'src/less/adminStyle/*.less',
+        'src/less/adminStyle/*.css'
+    ])
+        .pipe(gulpIf(isDevelopment, sourceMaps.init()))
+        .pipe(gLess({
+            path:['/src/less/']
+        }))
+        .pipe(gulpIf(isDevelopment, sourceMaps.write()))
+        .pipe(concat('admin.css'))
+        .pipe(gulp.dest('public/stylesheets'));
+});
+
+//сборка  admin less в css
+gulp.task('less', () =>{
     return gulp.src([
         'src/less/*.less',
         'src/less/pageStyles/*.css',
@@ -75,10 +96,10 @@ gulp.task('partials', function(){
 //изменение файлов
 gulp.task('watch', ()=>{
     gulp.watch('src/js/**/*.js', gulpsync.sync(['partials','concatJs']));
-    gulp.watch('src/less/**/*.less', ['less']);
+    gulp.watch('src/less/**/*.less', ['less', 'adminLess']);
     gulp.watch('src/partials/*.html', gulpsync.sync(['partials','concatJs']))
 });
 
-gulp.task('default', gulpsync.async([['partials', 'concatJs'], 'less', 'watch']));
+gulp.task('default', gulpsync.async([['partials', 'concatJs'], 'less', 'adminLess', 'watch']));
 
 

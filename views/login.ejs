@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel='stylesheet' href='/stylesheets/main.css' />
+    <link rel='stylesheet' href='/stylesheets/admin.css' />
+    <script type="text/javascript" src="/javascripts/libs.js"></script>
+    <script type="text/javascript" src="/javascripts/admin.js"></script>
+  </head>
+  <body>
+    <div class="row login-page-container">
+      <div class="col-xs-12 text-center">
+        <h3>Hello admin!</h3>
+      </div>
+
+      <form action="/users/login" method="post">
+        <div class="col-xs-12 input-div">
+          <input placeholder="login" name="login"/>
+        </div>
+        <div class="col-xs-12 input-div">
+          <input placeholder="password" name="password"/>
+        </div>
+        <div class="col-xs-12 text-center">
+          <input type="submit" value="ok"></i></input>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

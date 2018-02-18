@@ -3,10 +3,14 @@
  */
 Vue.component('navbar', {
     template: window.template.navbar,
+    props: ['admin'],
     data:function(){
         return {
             openMenu: false
         };
+    },
+    created: function () {
+        console.log("navbar init");
     },
     methods: {
         showMenu: function () {

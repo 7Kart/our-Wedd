@@ -5,12 +5,16 @@
     "./src/js/components/landing.js",
     "./src/js/components/firstSection.js",
     "./src/js/components/secondSection.js",
-    "./src/js/components/navbar.js"
-
+    "./src/js/components/navbar.js",
+    "./src/js/components/thirdSection.js",
+    "./src/js/components/ourInstagram.js"
   ],
   "libs":[
     "./src/js/libs/jquery.min.js",
     "./src/js/libs/jquery.fullpage.min.js",
     "./src/js/libs/vue.js"
+  ],
+  "admin.js":[
+    "./src/js/libs/bootstrap.min.js"
   ]
 }
