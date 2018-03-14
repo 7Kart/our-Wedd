@@ -1,4 +1,150 @@
+@link-color:rgb(117, 98, 62);
+
+
+
 .third-section{
+  height:100% !important;
+  padding: 0!important;
+  background: url("../images/background.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+}
+
+.third-section > div > div > div{
+  height: 100%;
+}
+
+.top-invite{
+  height:60%;
+  padding: 2% 0 0 0;
+
+}
+
+.bottom-invite{
+  height: 40%;
+}
+
+.invite-text-content > h3{
+  font-family: FuturaLight;
+  color: @link-color;
+  text-align: center !important;
+  letter-spacing: 1px;
+  font-size: 3em;
+}
+
+.invite-text-content{
+  padding: 0;
+}
+
+.invite-text-content p{
+  text-indent: 1.5em;
+  color: white;
+  text-align: justify !important;
+  font-family: FuturaLight;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  height: 100% !important;
+  font-size: 1.8em;
+  margin: 5px;
+}
+
+.alex-photo{
+  height: 95%;
+  background: url("../images/alex.png") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  -moz-transform: rotate(5deg); /* Для Firefox */
+  -ms-transform: rotate(5deg); /* Для IE */
+  -webkit-transform: rotate(5deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(5deg); /* Для Opera */
+  transform: rotate(5deg);
+}
+
+.art-photo{
+  //background-color: darkred;
+  height: 95%;
+  background: url("../images/art.png") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  -moz-transform: rotate(355deg); /* Для Firefox */
+  -ms-transform: rotate(355deg); /* Для IE */
+  -webkit-transform: rotate(355deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(355deg); /* Для Opera */
+  transform: rotate(355deg);
+  //padding: 50px 0 0 50px;
+
+}
+
+.bottom-invite > span{
+  color: white;
+  font-size: 1.8em;
+  font-family: FuturaLight;
+  text-align: center;
+}
+
+.bottom-invite > h3{
+  font-family: FuturaLight;
+  font-size: 4em;
+  text-align: center;
+  color: @link-color;
+  margin: 10px;
+}
+
+.colors-rounds{
+  text-align: center;
+  align-content: center;
   height:100%;
-  background-color: #2e6da4;
+}
+
+.colors-rounds{
+  list-style: none;
+
+}
+
+.color-round{
+  height: 60px;
+  //float: left;
+  display: inline-block;
+  width: 60px;
+  border-radius: 50%;
+  /* не забываем о кроссбраузерности */
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  //background-color: #3b2b1c;
+  margin: 5px;
+}
+
+#blue{
+  background-color: #0d2f3a;
+}
+
+#grey{
+  background-color: #5d6d64;
+}
+
+#lightgrey{
+  background-color: #83948a;
+}
+
+#white{
+  background-color: #eed9c5;
+}
+
+#pink{
+  background-color: #ffbbaa;
+}
+
+.top-invite > div:nth-child(1),.top-invite > div:nth-child(3){
+  padding:50px 50px 50px 50px;
+  height: 100%;
 }

@@ -1,189 +1,194 @@
-@block-background: rgb(121, 13, 10);
+@nav-bg-color: rgba(15, 15, 15, 0.48);
+@nav-bkack-line-height: 100px;
+@link-color:rgb(117, 98, 62);
+//@link-color:rgb(117, 98, 62);
 
-nav{
-  height: 115px;
-  width: 100%;
-  background: transparent;
-  font-size: 11pt;
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-weight: bold;
-  position: relative;
-  margin: 0;
-  z-index: 999 !important;
-}
-
-.logo-container{
-  //margin: 0 auto;
-  //float: left;
-  left: 46%;
+.desk-nav-bar{
   position: absolute;
-  width:8%;
-  //background-color: rgb(11, 13, 10);
-  height:100%;
-  border-radius: 0px 0px 200px 200px;
-  -moz-border-radius: 0px 0px 200px 200px;
-  -webkit-border-radius: 0px 0px 200px 200px;
-  border: 0px solid rgb(11, 13, 10);
-  background: url("../images/logo.png") no-repeat @block-background;
-  background-position: center;
-  background-size: 85px;
-}
-
-
-
-.desk-menu {
-  height: 50px;
-  margin:0 ;
-  //text-align: center;
-  width:46%;
+  top:0;
   padding: 0;
-  background-color: @block-background;
-
 }
 
-.desk-menu-left{
-  float: left;
-  padding-right: 3%;
+.black-line{
+  background-color: @nav-bg-color;
+  height:@nav-bkack-line-height;
+  padding: 0;
+}
+
+.round{
+  background-color: @nav-bg-color;
+  height:165px;
+  width:320px;
+  margin: 0 auto;
+  z-index: 988;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomright: 190px;
+  -webkit-border-bottom-right-radius: 190px;
+  border-bottom-right-radius: 190px;
+  -moz-border-radius-bottomleft: 190px;
+  -webkit-border-bottom-left-radius: 190px;
+  border-bottom-left-radius: 190px;
+}
+
+.desk-menu-container{
+  position: absolute;
+  top: 0px;
+  padding: 0;
+  height: @nav-bkack-line-height;
+  z-index: 999;
+}
+
+.plant-container{
+  position: absolute;
+  background: url("../images/green.png") no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100px;
+  top:40px;
+  z-index: 997;
+}
+
+
+.nav-container{
+  z-index: 998;
+  padding: 0;
+  position: absolute;
+  top:0;
+  background: url("../images/logo5.png")no-repeat;
+  //background-position:center;
+  background-position-x: center;
+  background-position-y: 15px;
+  min-height: 220px!important;
+  -webkit-background-size: 200px;
+  -moz-background-size: 200px;
+  -o-background-size: 200px;
+  background-size: 200px;
+}
+
+.light-container{
+  position: absolute;
+  height:700px;
+  //background-color: #2b542c;
+  top:@nav-bkack-line-height;
+}
+
+#first-lamp{
+  height:600px;
+  width:100%;
+  background: url("../images/left1.png") no-repeat;
+  background-position-x: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+
+#second-lamp{
+  height:600px;
+  width:90%;
+  background: url("../images/left2.png") no-repeat;
+  background-position-x: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#third-lamp{
+  height:600px;
+  width:95%;
+  background: url("../images/left3.png") no-repeat;
+  background-position-x: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#forth-lamp{
+  height:600px;
+  width:95%;
+  background: url("../images/right4.png") no-repeat;
+  background-position-x: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#fifth-lamp{
+  height:600px;
+  width:95%;
+  background: url("../images/right5.png") no-repeat;
+  background-position-x: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#six-lamp{
+  height:600px;
+  width:90%;
+  background: url("../images/right6.png") no-repeat;
+  background-position-x: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.lamp{
+  margin: 0 auto;
 }
 
 .desk-menu-left > li{
-  float: right;
+  text-align: center;
 }
 
 .desk-menu-right{
-  padding-left: 3%;
-  float: right;
+  text-align: center;
 }
 
-.desk-menu-right > li{
-  float: left;
+.desk-menu{
+  padding:0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  //text-align: center;
 }
-
 
 .desk-menu > li{
-  display: inline;
-  margin: 0 2% 0 2%;
-
-  //float: left
-
-}
-
-nav a {
-  //color: #fff;
   display: inline-block;
-  width: auto;
-  text-align: center;
-  text-decoration: none;
-  line-height: 50px;
-  //text-shadow: 1px 1px 0px #283744;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: "tiempos","Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 14pt;
-  letter-spacing: 2px;
-  color: white;
-}
-
-.mobile-menu a {
-  //color: #fff;
-  display: inline-block;
-  width: auto;
-  text-align: center;
-  text-decoration: none;
-  line-height: 50px;
-  //text-shadow: 1px 1px 0px #283744;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: "tiempos","Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 14pt;
-  letter-spacing: 2px;
-  color: grey;
-}
-
-
-
-#pull {
-  float: right;
-  padding-right: 25px;
-}
-
-.mobile-menu{
-  z-index: 990 !important;
-  text-align: center !important;
-  position: fixed;
-  top: 50px;
-  width: 100%;
+  vertical-align: baseline;
+  line-height: @nav-bkack-line-height;
   margin: 0;
-  padding: 0;
-  background-color: aquamarine;
-
+  text-transform: uppercase;
 }
-
-.phonemenubut-enter-active, .phonemenubut-leave-active {
-  transition: top .5s;
-}
-
-.phonemenubut-enter, .phonemenubut-leave-to /* .fade-leave-active до версии 2.1.8 */ {
-  top: -200px;
-}
-
-//menu button style
-
-.cmn-toggle-switch {
-  display: block;
-  right: 0px;
-  float: right;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  font-size: 0;
-  text-indent: -9999px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
+//
+.desk-menu-container a{
+  color: @link-color;
+  text-decoration: none;
   cursor: pointer;
-  background-color: red;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
+  vertical-align: baseline;
+  //font-family: ;
+  font-size: 1.4em;
+  font-family: FuturaLight;
+  letter-spacing: 1px;
+  z-index: 999;
 }
-
-.cmn-toggle-switch:focus {
-  outline: none;
-}
-
-.cmn-toggle-switch span {
-  display: block;
-  position: absolute;
-  top: 23px;
-  left: 4px;
-  right: 18px;
-  height: 4px;
-  width: 42px;
-  background: white;
-}
-
-.cmn-toggle-switch span::before,
-.cmn-toggle-switch span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  content: "";
-}
-
-.cmn-toggle-switch span::before {
-  top: -17px;
-}
-
-.cmn-toggle-switch span::after {
-  bottom: -17px;
-}
-//end menu but style
+//
+//.desk-menu-left{
+//  text-align: left;
+//}
+//

@@ -1,12 +1,13 @@
 /**
  * Created by kristofer on 17.12.17.
  */
-Vue.component('navbar', {
-    template: window.template.navbar,
+Vue.component('mob-navbar', {
+    template: window.template.mobilenavbar,
     props: ['admin'],
     data:function(){
         return {
-            openMenu: false
+            openMenu: false,
+            hideNav: false
         };
     },
     created: function () {
@@ -14,8 +15,24 @@ Vue.component('navbar', {
     },
     methods: {
         showMenu: function () {
-            this.openMenu = !this.openMenu;
+            var self = this;
+            if(this.hideNav == true){
+                setTimeout(function(){
+                    self.hideNav = ! self.hideNav;
+                },200)
+            }else{
+                this.hideNav = ! this.hideNav;
+            }
+            if(self.openMenu == false){
+                setTimeout(function(){
+                    self.openMenu = !self.openMenu;
+                }, 200);
+            }else{
+                self.openMenu = !self.openMenu;
+            }
+
         },
+
         chooseItem: function(){
             this.openMenu = false;
         }

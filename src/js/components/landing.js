@@ -8,9 +8,10 @@ Vue.component('landing', {
         $('#fullpage').fullpage({
             menu: '#menu',
             anchors:['firstPage', 'secondPage','thirdSection', 'ourInstagram'],
-            sectionsColor: ['#fff', '#4BBFC3'],
-            offsetSections:true,
+            sectionsColor: ['#fff', '#fff'],
+            // offsetSections:false,
             autoScrolling:false,
+            scrollOverflow: true
             // verticalCentered: false
         });
     }

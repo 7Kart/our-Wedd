@@ -11,8 +11,11 @@
   ],
   "libs":[
     "./src/js/libs/jquery.min.js",
+    "./src/js/libs/jquery.easings.min.js",
+    "./src/js/libs/scrolloverflow.min.js",
     "./src/js/libs/jquery.fullpage.min.js",
-    "./src/js/libs/vue.js"
+    "./src/js/libs/vue.js",
+    "./src/js/libs/instafeeed.min.js"
   ],
   "admin.js":[
     "./src/js/libs/bootstrap.min.js"

@@ -1,0 +1,37 @@
+<nav class="col-xs-12 mobile-navbar hidden-md hidden-lg">
+    <div class="col-xs-12 col-sm-12 mobile-nav-container">
+        <div v-bind:class="[hideNav ? 'mobile-logo-container-hide' : 'mobile-logo-container']" class="col-xs-6 col-xs-offset-3">
+
+        </div>
+        <div class="col-xs-3 col-xs-offset-9 mobile-menu-but-container" >
+            <div class="menu-button" v-bind:class="[{ open: openMenu }]" v-on:click="showMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <transition name="roundclose">
+        <div v-if="hideNav == false" class="col-xs-12 nav-round">
+            <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 round-bonder">
+
+            </div>
+        </div>
+    </transition>
+    <transition name="close">
+            <ul v-if="openMenu" class="col-xs-12 mobile-menu" >
+                <li class="col-xs-8 col-xs-offset-2">
+                    <a href="#secondPage">о церемонии</a>
+                </li>
+                <li class="col-xs-8 col-xs-offset-2">
+                    <a href="#thirdSection">приглашение</a>
+                </li>
+                <li class="col-xs-8 col-xs-offset-2">
+                    <a>наш инстаграм</a>
+                </li>
+                <li class="col-xs-8 col-xs-offset-2">
+                    <a>схема проезда</a>
+                </li>
+            </ul>
+    </transition>
+</nav>
