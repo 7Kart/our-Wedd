@@ -10,9 +10,9 @@ Vue.component('landing', {
             anchors:['firstPage', 'secondPage','thirdSection', 'ourInstagram'],
             sectionsColor: ['#fff', '#fff'],
             // offsetSections:false,
-            autoScrolling:false,
-            scrollOverflow: true,
-            // verticalCentered: false
+            autoScrolling:true,
+            // scrollOverflow: true,
+            // verticalCentered: falsetrue
         });
     }
 });
