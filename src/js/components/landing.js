@@ -11,7 +11,7 @@ Vue.component('landing', {
             sectionsColor: ['#fff', '#fff'],
             // offsetSections:false,
             autoScrolling:false,
-            scrollOverflow: true
+            scrollOverflow: true,
             // verticalCentered: false
         });
     }
