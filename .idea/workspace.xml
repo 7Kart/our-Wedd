@@ -108,7 +108,7 @@
           <file leaf-file-name="thirdSection.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/partials/thirdSection.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1246">
+                <state relative-caret-position="-54">
                   <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
                   <folding>
                     <element signature="e#382#387#0" expanded="true" />
@@ -268,7 +268,7 @@
           <file leaf-file-name="section3.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section3.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
+                <state relative-caret-position="-180">
                   <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
                   <folding />
                 </state>
@@ -278,8 +278,8 @@
           <file leaf-file-name="section1.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section1.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="419">
-                  <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+                <state relative-caret-position="190">
+                  <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -298,8 +298,28 @@
           <file leaf-file-name="mobilenavbar.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/partials/mobilenavbar.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
+                <state relative-caret-position="140">
                   <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mobilenavbar.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/less/pageStyles/mobilenavbar.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="316">
+                  <caret line="131" column="8" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="8" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="section2.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section2.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="694">
+                  <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -366,8 +386,8 @@
         <option value="$PROJECT_DIR$/src/partials/thirdSection.html" />
         <option value="$PROJECT_DIR$/src/less/pageStyles/section3.less" />
         <option value="$PROJECT_DIR$/src/partials/mobilenavbar.html" />
-        <option value="$PROJECT_DIR$/src/less/pageStyles/mobilenavbar.less" />
         <option value="$PROJECT_DIR$/src/partials/firstSection.html" />
+        <option value="$PROJECT_DIR$/src/less/pageStyles/mobilenavbar.less" />
         <option value="$PROJECT_DIR$/src/less/pageStyles/section1.less" />
       </list>
     </option>
@@ -712,12 +732,12 @@
       <workItem from="1520505711460" duration="27347000" />
       <workItem from="1520626388938" duration="24335000" />
       <workItem from="1521040349715" duration="18204000" />
-      <workItem from="1521392457412" duration="18135000" />
+      <workItem from="1521392457412" duration="19877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317446000" />
+    <option name="totallyTimeSpent" value="319188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1062,14 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section2.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -1088,7 +1100,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/partials/thirdSection.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1246">
+        <state relative-caret-position="-54">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding>
             <element signature="e#382#387#0" expanded="true" />
@@ -1236,22 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section3.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/pageStyles/mobilenavbar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/pageStyles/navbar.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2880">
@@ -1260,9 +1256,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/pageStyles/mobilenavbar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="131" column="8" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section3.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section2.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/partials/mobilenavbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="140">
           <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding />
         </state>
@@ -1278,8 +1298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/pageStyles/section1.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        <state relative-caret-position="190">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding />
         </state>
       </provider>
