@@ -7,7 +7,7 @@ Vue.component('landing', {
     mounted: function () {
         $('#fullpage').fullpage({
             menu: '#menu',
-            anchors:['firstPage', 'secondPage','thirdSection', 'ourInstagram'],
+            anchors:['firstPage', 'secondPage','thirdSection', 'mapSection'],
             sectionsColor: ['#fff', '#fff'],
             // offsetSections:false,
             autoScrolling:true,

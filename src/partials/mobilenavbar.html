@@ -13,24 +13,24 @@
     </div>
     <transition name="roundclose">
         <div v-if="hideNav == false" class="col-xs-12 nav-round">
-            <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-5 round-bonder">
+            <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-2 round-bonder">
 
             </div>
         </div>
     </transition>
     <transition name="close">
-            <ul v-if="openMenu" class="col-xs-12 mobile-menu" >
-                <li class="col-xs-8 col-xs-offset-2">
+            <ul v-if="openMenu" class="col-xs-12 col-sm-12 mobile-menu" >
+                <li class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
                     <a href="#secondPage">о церемонии</a>
                 </li>
-                <li class="col-xs-8 col-xs-offset-2">
+                <li class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
                     <a href="#thirdSection">приглашение</a>
                 </li>
-                <li class="col-xs-8 col-xs-offset-2">
+                <li class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
                     <a>наш инстаграм</a>
                 </li>
-                <li class="col-xs-8 col-xs-offset-2">
-                    <a>схема проезда</a>
+                <li class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
+                    <a href="#mapSection">схема проезда</a>
                 </li>
             </ul>
     </transition>

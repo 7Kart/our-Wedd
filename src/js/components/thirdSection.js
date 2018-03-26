@@ -6,5 +6,4 @@ Vue.component('thirdSection', {
     created: function () {
         console.log("open first section");
     },
-
 });

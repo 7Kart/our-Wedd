@@ -7,7 +7,8 @@
     "./src/js/components/secondSection.js",
     "./src/js/components/navbar.js",
     "./src/js/components/thirdSection.js",
-    "./src/js/components/ourInstagram.js"
+    "./src/js/components/ourInstagram.js",
+    "./src/js/components/mapSection.js"
   ],
   "libs":[
     "./src/js/libs/jquery.min.js",

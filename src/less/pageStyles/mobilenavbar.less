@@ -21,11 +21,80 @@
   border-bottom-right-radius: 2000px;
   border-bottom-left-radius: 2000px;
 }
+//
+//.nav-round{
+//  height:85px;
+//  padding:0;
+//}
 
-.nav-round{
-  height:85px;
-  padding:0;
+@media screen and (max-width: 400px) {
+  .nav-round{
+    height:85px;
+    padding:0;
+  }
+
+  .mobile-logo-container{
+    position: absolute;
+    top:20px;
+    height:120px;
+    background: url("../images/logo5.png") no-repeat;
+    background-position: center;
+    -webkit-background-size: 120px;
+    -moz-background-size: 120px;
+    -o-background-size: 120px;
+    background-size: 120px;
+    z-index: 999;
+    transition: all 0.3s;
+
+  }
 }
+
+@media screen and (max-width: 985px) and (min-width: 401px) {
+  .nav-round{
+    height:125px;
+    padding:0;
+  }
+
+  .mobile-logo-container{
+    position: absolute;
+    top:20px;
+    height:150px;
+    background: url("../images/logo5.png") no-repeat;
+    background-position: center;
+    -webkit-background-size: 120px;
+    -moz-background-size: 120px;
+    -o-background-size: 120px;
+    background-size: 120px;
+    z-index: 999;
+    transition: all 0.3s;
+
+  }
+}
+
+
+@media screen and(min-width: 986px) {
+  .nav-round{
+    height:85px;
+    padding:0;
+  }
+
+  .mobile-logo-container{
+    position: absolute;
+    top:20px;
+    height:120px;
+    background: url("../images/logo5.png") no-repeat;
+    background-position: center;
+    -webkit-background-size: 120px;
+    -moz-background-size: 120px;
+    -o-background-size: 120px;
+    background-size: 120px;
+    z-index: 999;
+    transition: all 0.3s;
+
+  }
+}
+
+
 
 .mobile-nav-container{
   background-color: @mobil-bg-color;
@@ -46,20 +115,20 @@
   transition: all 0.2s;
 }
 
-.mobile-logo-container{
-  position: absolute;
-  top:20px;
-  height:120px;
-  background: url("../images/logo5.png") no-repeat;
-  background-position: center;
-  -webkit-background-size: 120px;
-  -moz-background-size: 120px;
-  -o-background-size: 120px;
-  background-size: 120px;
-  z-index: 999;
-  transition: all 0.3s;
-
-}
+//.mobile-logo-container{
+//  position: absolute;
+//  top:20px;
+//  height:120px;
+//  background: url("../images/logo5.png") no-repeat;
+//  background-position: center;
+//  -webkit-background-size: 120px;
+//  -moz-background-size: 120px;
+//  -o-background-size: 120px;
+//  background-size: 120px;
+//  z-index: 999;
+//  transition: all 0.3s;
+//
+//}
 
 
 .mobile-menu-but-container{
@@ -142,19 +211,40 @@
   min-height: 375px;
 }
 
-.mobile-menu{
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  color: @link-color;
-  font-family: FuturaLight;
-  font-size: 1.8em;
-  background-color: @mobil-menu-bg-color;
-  padding: 0;
-  position: relative;
-  height:150px;
-  overflow: hidden;
+@media screen and (max-height: 500px) {
+  .mobile-menu{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: @link-color;
+    font-family: FuturaLight;
+    font-size: 1.4em;
+    background-color: @mobil-menu-bg-color;
+    padding: 0;
+    position: relative;
+    height:115px;
+    overflow: hidden;
+  }
 }
+
+@media screen and (min-height: 501px) {
+  .mobile-menu{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: @link-color;
+    font-family: FuturaLight;
+    font-size: 1.8em;
+    background-color: @mobil-menu-bg-color;
+    padding: 0;
+    position: relative;
+    height:150px;
+    overflow: hidden;
+  }
+}
+
+
+
 
 .mobile-menu li {
   display: block;
