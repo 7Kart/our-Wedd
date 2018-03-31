@@ -6,21 +6,36 @@
 
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 invite-text-content">
-            <h3>Приглашение</h3>
-            <p>
-                2 июня 2018 го&shy;да в на&shy;шей жиз&shy;ни сос&shy;тоит&shy;ся тор&shy;жест&shy;вен&shy;ное
-                и зна&shy;ме&shy;на&shy;тель&shy;ное со&shy;бы&shy;тие – день на&shy;шей свадь&shy;бы.
-            </p>
-            <p>
-                По&shy;зволь&shy;те приг&shy;ла&shy;сить Вас раз&shy;де&shy;лить с на&shy;ми
-                ра&shy;дость это&shy;го дня. По&shy;да&shy;ри&shy;те свою под&shy;держ&shy;ку и доб&shy;рые по&shy;же&shy;ла&shy;ния,
-                а мы в свою оче&shy;редь по&shy;де&shy;лимся ча&shy;сти&shy;чкой на&shy;ше&shy;го счас&shy;тья.
-            </p>
+        <div class="col-lg-4 col-md-6 invite-text-content" v-on:click="openLetter($event)">
+
+            <div  v-bind:class="[openLetFlag ? 'latter-top-open' : 'latter-top-close']">
+
+            </div>
+
+            <div v-bind:class="[openLetFlag ? 'latter-list-open' : 'latter-list-close']" class="latter-list">
+                <h3>Приглашение</h3>
+                <p>
+                    2 июня 2018 го&shy;да в на&shy;шей жиз&shy;ни сос&shy;тоит&shy;ся тор&shy;жест&shy;вен&shy;ное
+                    и зна&shy;ме&shy;на&shy;тель&shy;ное со&shy;бы&shy;тие – день на&shy;шей свадь&shy;бы.
+                </p>
+                <p>
+                    По&shy;зволь&shy;те приг&shy;ла&shy;сить Вас раз&shy;де&shy;лить с на&shy;ми
+                    ра&shy;дость это&shy;го дня. По&shy;да&shy;ри&shy;те свою под&shy;держ&shy;ку и доб&shy;рые по&shy;же&shy;ла&shy;ния,
+                    а мы в свою оче&shy;редь по&shy;де&shy;лимся ча&shy;сти&shy;чкой на&shy;ше&shy;го счас&shy;тья.
+                </p>
+            </div>
+
+            <div class="latter-bootom">
+
+            </div>
+
+            <div class="latter-bootom latter-bootom-back">
+
+            </div>
+
         </div>
         <div class="col-lg-4 col-md-3 photo-container">
             <div class="alex-photo">
-
             </div>
         </div>
     </div>

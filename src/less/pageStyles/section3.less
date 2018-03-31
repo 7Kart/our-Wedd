@@ -1,5 +1,5 @@
 @link-color:rgb(117, 98, 62);
-
+@latter-color:#83948a;
 @circle-radius: 90px;
 
 .third-section{
@@ -18,17 +18,17 @@
 }
 
 .top-invite, .top-invite-sm{
-  height:70%;
+  height:75%;
   padding: 2% 0 0 0;
 }
 
 .top-invite-sm > div:nth-child(1){
-  height:45%;
+  height:40%;
 
 }
 
 .top-invite-sm > div:nth-child(2){
-  height:55%;
+  height:60%;
 }
 
 .sm-photo-container >div{
@@ -36,14 +36,14 @@
 }
 
 .bottom-invite{
-  height: 30%;
+  height: 25%;
   position: relative;
   width: 100%;
   padding: 0 !important;
 
 }
 
-.invite-text-content > h3, .invite-text-content-sm > h3{
+.latter-list > h3, .invite-text-content-sm > h3{
   font-family: FuturaLight;
   color: @link-color;
   text-align: center !important;
@@ -56,12 +56,120 @@
   padding: 0 !important;
 }
 
+//приглашение письмо
 .invite-text-content{
   padding: 0;
+  position:relative;
+}
+
+.latter-bootom{
+  z-index: 990;
+  position: absolute;
+  bottom: 0;
+  height: 55%;
+  background: url("../images/letter.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+
+}
+
+.latter-bootom-back{
+  z-index: 989;
+  background-color: @latter-color;
 }
 
 
-.invite-text-content p, .invite-text-content-sm p{
+.latter-top-open{
+  position: absolute;
+  //height:30%;
+  width: 100%;
+  bottom: 55%;
+  height: 45%;
+
+  background: url("../images/letter-top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.latter-list{
+  position: absolute;
+  left:1%;
+  width:98%;
+  height: 50%;
+  background-color: white;
+}
+
+.latter-list-close{
+  z-index: 990;
+  bottom:0;
+  transition: bottom 1.5s;
+}
+
+.latter-list-open{
+  z-index: 990;
+  bottom:50%;
+  transition: bottom 1.5s;
+}
+
+
+
+.latter-top-close{
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  height: 45%;
+  background: url("../images/letter-top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  //-webkit-clip-path: polygon(50% 100%, 100% 28%, 100% 0, 0 0, 0 27%);
+  //clip-path: polygon(50% 100%, 100% 28%, 100% 0, 0 0, 0 27%);
+  //background-color: white;
+  //bordder:1px solid black;
+  //transition-delay: 0.5s
+
+}
+
+
+.bottom-triangle{
+  position: absolute;
+  height:40%;
+  width:100%;
+  bottom: 0;
+  z-index: 995;
+  background-color: #8a6d3b;
+}
+
+.latter-list p{
+  text-indent: 1.5em;
+  color: black;
+  text-align: justify !important;
+  font-family: FuturaLight;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  font-size: 1.6em;
+  margin: 5px;
+}
+
+.invite-text-content-sm p{
   text-indent: 1.5em;
   color: white;
   text-align: justify !important;
@@ -72,6 +180,7 @@
   font-size: 1.8em;
   margin: 5px;
 }
+
 
 .alex-photo{
   height: 95%;
@@ -98,7 +207,8 @@
   background-size: contain;
   background-position: center;
   -moz-transform: rotate(355deg); /* Для Firefox */
-  -ms-transform: rotate(355deg); /* Для IE */
+  -ms-transform: rotate(35
+  5deg); /* Для IE */
   -webkit-transform: rotate(355deg); /* Для Safari, Chrome, iOS */
   -o-transform: rotate(355deg); /* Для Opera */
   transform: rotate(355deg);

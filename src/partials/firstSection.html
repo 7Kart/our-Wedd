@@ -24,20 +24,17 @@
     <div class="light-container col-xs-12 hidden-sm hidden-xs">
         <div class="col-md-5">
             <div class="col-lg-4 col-md-6">
-                <div id="first-lamp" class="lamp">
+                <div v-bind:class="[lampFirstOn ? 'first-lamp-on' : 'first-lamp-off']"   class="lamp first-lamp">
 
                 </div>
-                <!--<div class="lamp-light">-->
-
-                <!--</div>-->
             </div>
             <div class="col-lg-4 col-md-6 ">
-                <div id="second-lamp" class="lamp">
+                <div v-bind:class="[lampSecondOn ? 'second-lamp-on' : 'second-lamp-off']"   class="lamp second-lamp">
 
                 </div>
             </div>
             <div class="col-lg-4 hidden-md">
-                <div id="third-lamp" class="lamp">
+                <div v-bind:class="[lampSecondOn ? 'third-lamp-on' : 'third-lamp-off']"   class="lamp third-lamp">
 
                 </div>
             </div>
@@ -45,17 +42,17 @@
 
         <div class="col-md-5 col-md-offset-2 ">
             <div class="col-lg-4 hidden-md" >
-                <div id="forth-lamp" class="lamp">
+                <div v-bind:class="[lampForthOn ? 'forth-lamp-on' : 'forth-lamp-off']"   class="lamp forth-lamp">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div id="fifth-lamp" class="lamp">
+                <div v-bind:class="[lampFifthOn ? 'fifth-lamp-on' : 'fifth-lamp-off']"   class="lamp fifth-lamp">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div id="six-lamp" class="lamp">
+                <div v-bind:class="[lampSixOn ? 'six-lamp-on' : 'six-lamp-off']"   class="lamp six-lamp">
 
                 </div>
             </div>

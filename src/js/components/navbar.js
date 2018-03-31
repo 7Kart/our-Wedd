@@ -30,11 +30,11 @@ Vue.component('mob-navbar', {
             }else{
                 self.openMenu = !self.openMenu;
             }
-
         },
 
         chooseItem: function(){
             this.openMenu = false;
+            this.hideNav = false;
         }
     }
 });

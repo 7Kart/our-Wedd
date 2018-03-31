@@ -6,4 +6,15 @@ Vue.component('thirdSection', {
     created: function () {
         console.log("open first section");
     },
+    data:function(){
+        return {
+            openLetFlag: false
+        }
+    },
+    methods: {
+        openLetter: function(e){
+            this.openLetFlag = !this.openLetFlag;
+            console.log("e", this.openLetFlag);
+        }
+    }
 });
