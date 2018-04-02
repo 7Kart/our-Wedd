@@ -8,13 +8,37 @@ Vue.component('thirdSection', {
     },
     data:function(){
         return {
-            openLetFlag: false
+            openLetFlag: false,
+            showListFlag: false,
+            animate:false
+        }
+    },
+    props:['start'],
+    watch:{
+        start:function(){
+            console.log("start change");
+            this.openLetter();
         }
     },
     methods: {
         openLetter: function(e){
-            this.openLetFlag = !this.openLetFlag;
-            console.log("e", this.openLetFlag);
+            console.log("props", this.start);
+            if(!this.animate){
+                this.animate = true;
+                if(!this.openLetFlag){
+                    this.openLetFlag = !this.openLetFlag;
+                    setTimeout(()=>{
+                        this.showListFlag = !this.showListFlag;
+                        this.animate = false;
+                    },100);
+                }else{
+                    this.showListFlag = !this.showListFlag;
+                    setTimeout(()=>{
+                        this.openLetFlag = !this.openLetFlag;
+                        this.animate = false;
+                    },1200);
+                }
+            }
         }
     }
 });

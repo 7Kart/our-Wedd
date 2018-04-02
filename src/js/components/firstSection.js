@@ -13,10 +13,9 @@ Vue.component('firstSection', {
             lampSixOn: false
         }
     },
+    
     created: function () {
-        console.log("open first section");
         setInterval(()=>{
-            console.log("interval");
             this.lampFirstOn = !this.lampFirstOn;
         },3000);
 

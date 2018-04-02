@@ -5,7 +5,7 @@
 .third-section{
   height:100% !important;
   padding: 0!important;
-  background: url("../images/background.png") no-repeat;
+  background: url("../images/background.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,20 +36,32 @@
 }
 
 .bottom-invite{
+  padding: 2% 0 0 0;
   height: 25%;
   position: relative;
   width: 100%;
-  padding: 0 !important;
+  //padding: 0 !important;
 
 }
 
-.latter-list > h3, .invite-text-content-sm > h3{
+.invite-text-content-sm > h3{
   font-family: FuturaLight;
   color: @link-color;
   text-align: center !important;
   letter-spacing: 1px;
   font-size: 3em;
   margin: 10px;
+}
+
+.latter-list > h3{
+  font-family: DrawPen;
+  color: black;
+  text-align: center !important;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+  margin-top: 8%;
+  margin-bottom: 1%;
+
 }
 
 .invite-text-content-sm{
@@ -162,11 +174,12 @@
   text-indent: 1.5em;
   color: black;
   text-align: justify !important;
-  font-family: FuturaLight;
+  font-family: DrawPen;
   letter-spacing: 1px;
   word-wrap: break-word;
   font-size: 1.6em;
-  margin: 5px;
+  margin: 0;
+  padding: 1% 5% 0 5%;
 }
 
 .invite-text-content-sm p{
@@ -218,38 +231,33 @@
 
 .bottom-invite > span{
   color: white;
-  font-size: 1.8em;
+  font-size: 2em;
   font-family: FuturaLight;
   text-align: center;
 }
 
 .bottom-invite > h3{
   font-family: FuturaLight;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   color: @link-color;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .colors-rounds{
+  margin: 0;
   text-align: center;
-  //align-content: center;
-  ////height:100%;
-  position: absolute;
-  bottom:0 !important;
   list-style: none;
-
 }
 
 
 
 .color-round{
-  height: 60px;
+  height: 45px;
   //float: left;
   display: inline-block;
-  width: 60px;
+  width: 45px;
   border-radius: 50%;
-  /* не забываем о кроссбраузерности */
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -khtml-border-radius: 50%;
@@ -278,7 +286,7 @@
 }
 
 .top-invite > .photo-container{
-  padding:50px 50px 50px 50px;
+  padding:5% 5% 5% 5%;
   height: 100%;
 }
 
@@ -291,7 +299,7 @@
   text-align: center;
   font-size: 38px;
   letter-spacing: 2px;
-  margin: 5px 0 2vw 0;
+  margin: 2% 0 3% 0;
   font-family: FuturaLight;
 
 }
@@ -300,7 +308,7 @@
   color: @link-color;
   text-align: center;
   font-size: 24px;
-  margin: 5px 0 5px 0 ;
+  margin:  2% 0 2% 0 ;
   padding: 0;
   font-family: FuturaLight;
 }
@@ -309,11 +317,11 @@
   color: white;
   text-align: justify;
   word-wrap: break-word;
-  font-size: 24px;
+  font-size: 22px;
   word-break: normal;
   margin: 0px 0 0 0;
   text-indent: 1.1em;
-  padding: 0;
+  //padding: 0;
   font-family: FuturaLight;
 }
 
@@ -328,7 +336,7 @@
   height:100%;
   list-style: none;
   text-align: center;
-  margin: 0;
+  margin: 2% 0 2% 0;
 }
 
 .mobile-photo-cont > ul > li{
@@ -403,5 +411,6 @@
   text-indent: 0 !important;
   margin: 0 0 0 0 !important;
   font-family: FuturaLight;
+  font-size: 22px;
 
 }
