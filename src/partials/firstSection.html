@@ -24,17 +24,17 @@
     <div class="light-container col-xs-12 hidden-sm hidden-xs">
         <div class="col-md-5">
             <div class="col-lg-4 col-md-6">
-                <div v-bind:class="[lampFirstOn ? 'first-lamp-on' : 'first-lamp-off']"   class="lamp first-lamp">
+                <div class="lamp first-lamp first-lamp-off">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 ">
-                <div v-bind:class="[lampSecondOn ? 'second-lamp-on' : 'second-lamp-off']"   class="lamp second-lamp">
+                <div class="lamp second-lamp second-lamp-off">
 
                 </div>
             </div>
             <div class="col-lg-4 hidden-md">
-                <div v-bind:class="[lampSecondOn ? 'third-lamp-on' : 'third-lamp-off']"   class="lamp third-lamp">
+                <div class="lamp third-lamp third-lamp-off">
 
                 </div>
             </div>
@@ -42,19 +42,69 @@
 
         <div class="col-md-5 col-md-offset-2 ">
             <div class="col-lg-4 hidden-md" >
-                <div v-bind:class="[lampForthOn ? 'forth-lamp-on' : 'forth-lamp-off']"   class="lamp forth-lamp">
+                <div class="lamp forth-lamp forth-lamp-off">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div v-bind:class="[lampFifthOn ? 'fifth-lamp-on' : 'fifth-lamp-off']"   class="lamp fifth-lamp">
+                <div class="lamp fifth-lamp fifth-lamp-off">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div v-bind:class="[lampSixOn ? 'six-lamp-on' : 'six-lamp-off']"   class="lamp six-lamp">
+                <div  class="lamp six-lamp six-lamp-off">
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="light-container-grey col-xs-12 hidden-sm hidden-xs">
+        <div class="col-md-5">
+            <div class="col-lg-4 col-md-6">
+                <transition name="fade">
+                    <div v-show="lampFirstOn" class="first-lamp-on first-lamp lamp">
+
+                    </div>
+                </transition>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <transition name="fade2">
+                    <div v-show="lampSecondOn" class="lamp second-lamp second-lamp-on">
+
+                    </div>
+                </transition>
+            </div>
+            <div class="col-lg-4 hidden-md">
+                <transition name="fade3">
+                    <div v-show="lampThirdOn" class="lamp third-lamp third-lamp-on">
+
+                    </div>
+                </transition>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-md-offset-2 ">
+            <div class="col-lg-4 hidden-md" >
+                <transition name="fade4">
+                    <div v-show="lampForthOn" class="lamp forth-lamp forth-lamp-on">
+
+                    </div>
+                </transition>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <transition name="fade5">
+                    <div v-show="lampFifthOn" class="lamp fifth-lamp fifth-lamp-on">
+
+                    </div>
+                </transition>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <transition name="fade6">
+                    <div v-show="lampSixOn" class="lamp six-lamp six-lamp-on">
+
+                    </div>
+                </transition>
             </div>
         </div>
     </div>

@@ -74,38 +74,22 @@
   background-size: 200px;
 }
 
-.light-container{
+.light-container, .light-container-grey{
   position: absolute;
   height:700px;
   //background-color: #2b542c;
   top:@nav-bkack-line-height;
 }
 
-#first-lamp{
-  height:600px;
-  width:100%;
-  background: url("../images/left1.png") no-repeat;
-  background-position-x: center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
 
 .first-lamp-on{
+  //opacity: 1;
   background: url("../images/left1.png") no-repeat;
-  transition: background 1.5s;
-  -webkit-transition:background 1.5s;
-  -moz-transition:all 1.5s;
-  -ms-transition:background 1.5s;
 }
+
 
 .first-lamp-off{
   background: url("../images/left1_grey.png") no-repeat;
-  transition: background 1.5s;
-  -webkit-transition:background 1.5s;
-  -moz-transition:all 1.5s;
-  -ms-transition:background 1.5s;
 }
 
 .first-lamp{
@@ -116,6 +100,15 @@
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
+}
+
+
+.fade-enter-active, .fade-leave-active{
+  transition: opacity 2s;
+}
+
+.fade-enter, .fade-leave-to{
+  opacity: 0;
 }
 
 //вторая лампа
@@ -145,7 +138,13 @@
   -o-background-size: contain;
   background-size: contain;
 }
+.fade2-enter-active, .fade2-leave-active{
+  transition: opacity 2s;
+}
 
+.fade2-enter, .fade2-leave-to{
+  opacity: 0;
+}
 //третья лампа
 
 .third-lamp-on{
@@ -174,6 +173,13 @@
   background-size: contain;
 }
 
+.fade3-enter-active, .fade3-leave-active{
+  transition: opacity 2s;
+}
+
+.fade3-enter, .fade3-leave-to{
+  opacity: 0;
+}
 
 //четвертая
 .forth-lamp-on{
@@ -200,6 +206,14 @@
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
+}
+
+.fade4-enter-active, .fade4-leave-active{
+  transition: opacity 2s;
+}
+
+.fade4-enter, .fade4-leave-to{
+  opacity: 0;
 }
 
 //пятая
@@ -229,6 +243,14 @@
   background-size: contain;
 }
 
+.fade5-enter-active, .fade5-leave-active{
+  transition: opacity 2s;
+}
+
+.fade5-enter, .fade5-leave-to{
+  opacity: 0;
+}
+
 //шестая
 
 .six-lamp-on{
@@ -256,6 +278,15 @@
   -o-background-size: contain;
   background-size: contain;
 }
+
+.fade6-enter-active, .fade6-leave-active{
+  transition: opacity 2s;
+}
+
+.fade6-enter, .fade6-leave-to{
+  opacity: 0;
+}
+
 //
 .lamp{
   margin: 0 auto;

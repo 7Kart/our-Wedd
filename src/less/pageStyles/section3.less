@@ -152,12 +152,6 @@
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  //-webkit-clip-path: polygon(50% 100%, 100% 28%, 100% 0, 0 0, 0 27%);
-  //clip-path: polygon(50% 100%, 100% 28%, 100% 0, 0 0, 0 27%);
-  //background-color: white;
-  //bordder:1px solid black;
-  //transition-delay: 0.5s
-
 }
 
 
@@ -234,6 +228,7 @@
   font-size: 2em;
   font-family: FuturaLight;
   text-align: center;
+
 }
 
 .bottom-invite > h3{
@@ -306,8 +301,8 @@
 
 .mobile-invite-body > h4{
   color: @link-color;
-  text-align: center;
   font-size: 28px;
+  text-align: center;
   margin:  2% 0 2% 0 ;
   padding: 0;
   font-family: FuturaLight;
@@ -329,8 +324,20 @@
   //background-color: #ff93e5;
   height:@circle-radius!important;
   text-align: center;
-  margin: 5% 0 5% 0;
 }
+
+@media screen and (max-height: 500px) {
+  .mobile-photo-cont{
+    margin: 1% 0 1% 0;
+  }
+}
+
+@media screen and (min-height: 501px) {
+  .mobile-photo-cont{
+    margin: 5% 0 5% 0;
+  }
+}
+
 
 .mobile-photo-cont > ul{
   height:100%;
@@ -401,12 +408,13 @@
 }
 
 .footer{
-  padding:0;
+  //padding:0;
 }
 
 .footer p{
   //color: white;
-  text-align: center;
+  text-align: justify;
+  word-wrap: break-word;
   text-indent: 0 !important;
   margin: 0 0 0 0 !important;
   font-family: FuturaLight;
