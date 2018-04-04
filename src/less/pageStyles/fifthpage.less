@@ -5,6 +5,7 @@
   text-align: center;
   //background-color: #2aabd2;
   letter-spacing: 1px;
+  cursor: pointer;
   font-family: FuturaLight;
 }
 //color: @link-color;
@@ -12,9 +13,15 @@
 .timing-event h1{
   color: #3b2b1c;
   font-size: 46px;
-  width: 50%;
+  width: 40%;
   margin: 1% auto;
   border-bottom: 4px solid #5d6d64;
+  transition: width .5s;
+}
+
+.timing-event:hover > h1{
+  width: 60%!important;
+  transition: width .3s;
 }
 
 .timing-event h3{
