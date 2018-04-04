@@ -1,6 +1,7 @@
 @link-color:rgb(117, 98, 62);
 @latter-color:#83948a;
 @circle-radius: 90px;
+@circle-radius-min: 80px;
 
 .third-section{
   height:100% !important;
@@ -322,7 +323,7 @@
 
 .mobile-photo-cont{
   //background-color: #ff93e5;
-  height:@circle-radius!important;
+  //height:@circle-radius!important;
   text-align: center;
 }
 
@@ -348,14 +349,27 @@
 
 .mobile-photo-cont > ul > li{
   display: inline-block;
-  //background-color: #4cae4c;
-  height: 100%;
+  height:@circle-radius!important;
   width: @circle-radius;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -khtml-border-radius: 50%;
   margin: 0 5% 0 5%;
+}
+
+@media screen and (max-height: 500px) {
+  .mobile-photo-cont > ul > li{
+    height:@circle-radius-min!important;
+    width: @circle-radius-min;
+  }
+}
+
+@media screen and (min-height: 501px) {
+  .mobile-photo-cont > ul > li{
+    height:@circle-radius!important;
+    width: @circle-radius;
+  }
 }
 
 #art-img{
@@ -384,11 +398,24 @@
   margin:0;
 }
 
+@media screen and (max-height: 500px) {
+  .mob-colors > li{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (min-height: 501px) {
+  .mob-colors > li{
+    height: 50px;
+    width: 50px;
+  }
+}
+
 
 .mob-colors > li{
   display: inline-block;
-  height: 50px;
-  width: 50px;
+
   background-color: #4cae4c;
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -413,7 +440,7 @@
 
 .footer p{
   //color: white;
-  text-align: justify;
+  text-align: center;
   word-wrap: break-word;
   text-indent: 0 !important;
   margin: 0 0 0 0 !important;
