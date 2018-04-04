@@ -6,7 +6,8 @@ Vue.component('landing', {
 
     data: function(){
         return {
-            openLetter: false
+            openLetter: false,
+            startTimingAnimation: false
         }
     },
 
@@ -29,13 +30,14 @@ Vue.component('landing', {
             // verticalCentered: falsetrue
             afterLoad: function( anchorLink, index){
                 var loadedSlide = $(this);
-                //первый слайд второго раздела
                 if(anchorLink == 'thirdSection'){
-                    console.log("that", that.openLetter);
                     setTimeout(function(){
                         that.openLetter = true;
                     },200);
-                    // alert("Первый слайд загружен");
+                }else if(anchorLink == 'timingSection'){
+                    setTimeout(function(){
+                        that.startTimingAnimation = true;
+                    },100);
                 }
             }
         });

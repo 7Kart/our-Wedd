@@ -83,9 +83,26 @@
 .img-container{
   height: 60px;
   width: 60px;
-  margin: auto auto;
-  //float: left;
   background-position: center;
+}
+
+.img-container-open{
+  margin: auto calc(50% - 20px);;
+  transition: margin .3s;
+}
+
+.img-container-open-right{
+  margin-left: 0;
+  transition: margin-right .3s;
+}
+
+
+.img-container-close-left{
+  margin-left: -100px;
+}
+
+.img-container-close-left{
+  margin-right: -300%;
 }
 
 .event-time{
@@ -103,3 +120,5 @@
   font-size: 20px;
   //margin: auto auto;
 }
+
+

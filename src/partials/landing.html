@@ -5,7 +5,7 @@
     <secondSection></secondSection>
     <thirdSection v-bind:start="openLetter"></thirdSection>
     <fifthSection v-if="isXs() == false"></fifthSection>
-    <mobilefifthpage v-if="isXs() == true"></mobilefifthpage>
+    <mobilefifthpage v-if="isXs() == true" v-bind:start="startTimingAnimation"></mobilefifthpage>
     <mapSection></mapSection>
     <!--<ourInstagram></ourInstagram>-->
 </div>

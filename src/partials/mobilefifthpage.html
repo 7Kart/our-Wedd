@@ -1,12 +1,12 @@
 <div class="section col-xs-12 mobile-timing-container">
     <div class="time-eventcontainer">
         <div class="event-img">
-            <div class="img-container" id="mob-wedd-ev">
+            <div v-bind:class="[showIcons1 ? 'img-container-open' : 'img-container-close-left']" class="img-container" id="mob-wedd-ev">
 
             </div>
         </div>
-        <div class="event-time">
-            <h1>
+        <div class="event-time" >
+            <h1 v-bind:class="[showIcons1 ? 'img-container-open-right' : 'img-container-close-left']">
                 11:20
             </h1>
         </div>
@@ -14,12 +14,12 @@
     </div>
     <div class="time-eventcontainer">
         <div class="event-img">
-            <div class="img-container" id="mob-photo-ev">
+            <div v-bind:class="[showIcons2 ? 'img-container-open' : 'img-container-close-left']" class="img-container" id="mob-photo-ev">
 
             </div>
         </div>
         <div class="event-time">
-            <h1>
+            <h1 v-bind:class="[showIcons2 ? 'img-container-open-right' : 'img-container-close-left']" >
                 12:30
             </h1>
         </div>
@@ -27,12 +27,12 @@
     </div>
     <div class="time-eventcontainer">
         <div class="event-img">
-            <div class="img-container" id="mob-furshet-ev">
+            <div v-bind:class="[showIcons3 ? 'img-container-open' : 'img-container-close-left']" class="img-container" id="mob-furshet-ev">
 
             </div>
         </div>
         <div class="event-time">
-            <h1>
+            <h1 v-bind:class="[showIcons3 ? 'img-container-open-right' : 'img-container-close-left']">
                 17:30
             </h1>
         </div>
@@ -40,12 +40,12 @@
     </div>
     <div class="time-eventcontainer">
         <div class="event-img">
-            <div class="img-container" id="mob-banket-ev">
+            <div v-bind:class="[showIcons4 ? 'img-container-open' : 'img-container-close-left']" class="img-container" id="mob-banket-ev">
 
             </div>
         </div>
         <div class="event-time">
-            <h1>
+            <h1  v-bind:class="[showIcons4 ? 'img-container-open-right' : 'img-container-close-left']">
                 18:00
             </h1>
         </div>
